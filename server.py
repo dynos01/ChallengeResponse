@@ -11,8 +11,8 @@ userData = "users.json"
 class serverObj:
     challenge = ""
     def getChallenge(self):
-        charSet = string.ascii_letters + string.digits + string.punctuation
-        self.challenge = "".join(random.choice(charSet) for i in range(16))
+        charset = string.ascii_letters + string.digits + string.punctuation
+        self.challenge = "".join(random.choice(charset) for i in range(16))
         return self.challenge
     def getStatus(self, username, message):
         with open(userData) as f:
