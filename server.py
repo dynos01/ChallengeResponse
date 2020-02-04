@@ -1,5 +1,4 @@
 import json
-import os
 import string
 import random
 from md5 import md5
